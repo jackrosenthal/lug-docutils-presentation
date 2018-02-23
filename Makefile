@@ -11,8 +11,8 @@ all: $(43PDFFILES) $(169PDFFILES) $(1610PDFFILES)
 out:
 	mkdir out
 
-out/%.pdf: %.tex beamerthemelug.sty graphics/lug.pdf | out
-	xelatex -shell-escape $<
+out/%.pdf: %.tex beamerthemelug.sty graphics | out
+	xelatex $<
 	mv $(patsubst out/%.pdf,%.pdf,$@) out
 	rm -f $(patsubst out/%.pdf,%.log,$@) \
 	      $(patsubst out/%.pdf,%.aux,$@) \

@@ -1,3 +1,10 @@
 out/
-*.tex
-*.pdf
+/*.tex
+/*.pdf
+/*.log
+/*.aux
+/*.nav
+/*.out
+/*.snm
+/*.toc
+/*.vrb
